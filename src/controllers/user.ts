@@ -1,9 +1,23 @@
 import { Request, Response } from "express";
 
-const create = async (req: Request, res: Response) => {
-  const { name, email, password } = req.body;
-
-  return res.status(200).json({ data: { name, email, password } });
+const index = async (req: Request, res: Response) => {
+  return res.status(200).json({});
 };
 
-export default { create };
+const create = async (req: Request, res: Response) => {
+  return res.status(200).json();
+};
+
+const show = async (req: Request, res: Response) => {
+  return res.status(200).json({});
+};
+
+const update = async (req: Request, res: Response) => {
+  return res.status(200).json({});
+};
+
+const destroy = async (req: Request, res: Response) => {
+  return res.status(200).json({});
+};
+
+export default { index, create, show, update, destroy };
